@@ -11,7 +11,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  position.to_i.between?(0,8) && !position_taken?(board, position.to_i-1)
+  index.to_i.between?(0,8) && !position_taken?(board, index.to_i-1)
 end
 
 def turn(board)
